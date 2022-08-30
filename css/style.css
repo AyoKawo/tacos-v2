@@ -628,4 +628,8 @@ header .center:after {
   header .center:after {
     width: 25%;
   }
+  
+  .master-image {
+    padding: 1rem;
+  }
 }
