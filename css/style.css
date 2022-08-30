@@ -77,7 +77,7 @@ body {
 }
 
 .cover .box-3 {
-  background: url("./images/GLV.gif");
+  background: url("https://i.gifer.com/GLV.gif");
   height: 60vh;
   width: 65%;
   position: relative;
@@ -568,7 +568,7 @@ header .center:after {
   }
 
   .cover .box-3 {
-    background: url("/images/GLV.gif") no-repeat;
+    background: url("https://i.gifer.com/GLV.gif") no-repeat;
     height: 30rem;
   }
 
