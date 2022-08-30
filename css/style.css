@@ -77,7 +77,7 @@ body {
 }
 
 .cover .box-3 {
-  background: url("/images/GLV.gif");
+  background: url("./images/GLV.gif");
   height: 60vh;
   width: 65%;
   position: relative;
