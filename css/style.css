@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgb(0 0 0 / 7%);
+}
+
+body {
+  background-image: url(./images/topography.svg),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  width: 100vw;
+  height: auto;
+  font-family: poppins, sans-serif;
+  user-select: none;
+  overflow-x: hidden;
+  margin-top: 50px;
+  letter-spacing: -1px;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  display: none;
+}
+
+.beginner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.beginner .list-1 {
+  background: var(--yellow);
+  padding: 10px;
+  width: 19%;
+  text-align: center;
+}
+
+.beginner a {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--black);
+}
+
+.cover {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.cover .box-3 {
+  background: url("/images/GLV.gif");
+  height: 60vh;
+  width: 65%;
+  position: relative;
+}
+
+.cover .box-3 .margtop {
+  margin-top: 20%;
+  margin-left: 4rem;
+}
+
+.joint {
+  background-color: yellow;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+.good {
+  background-color: yellow;
+  width: 20%;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.rightside {
+  width: 32%;
+  height: 60vh;
+}
+
+.cover .box-4 {
+  background: var(--yellow);
+  margin-bottom: 2rem;
+  padding: 43px;
+  text-align: center;
+}
+
+.cover .box-4 .num {
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.cover .box-4 .lett {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.split {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.split .box-6 {
+  background: white;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.split .box-6 .i {
+  font-size: 6rem;
+  margin-top: 5rem;
+}
+
+.split .box-6 .t {
+  font-size: 1.5rem;
+}
+
+.split .box-6 .word {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.box-10 {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: white;
+  height: 55vh;
+}
+
+.box-10 .size {
+  position: relative;
+  left: -8%;
+}
+
+.box-10 .float {
+  position: relative;
+  left: -30%;
+}
+
+.box-10 .float h2 {
+  font-size: 2.5rem;
+}
+
+.box-10 .float h4 {
+  font-size: 1.5rem;
+}
+
+.box-10 .float h5 {
+  font-size: 1.5rem;
+}
+
+.box-10 .float button {
+  background: var(--yellow);
+  padding: 10px;
+  width: 50%;
+}
+
+.box-10 .float button a {
+  margin-left: -4rem;
+  color: var(--black);
+}
+
+.box-10 .float button .right-arrow {
+  position: absolute;
+  animation: movearrow 1s alternate-reverse infinite;
+  margin-left: 2.5rem;
+  margin-top: -0.3rem;
+}
+
+@keyframes movearrow {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+header .center {
+  margin-top: 3.5rem;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+}
+
+header .center:before {
+  content: "";
+  display: block;
+  width: 43%;
+  height: 10px;
+  background: url(./images/topography.svg),
+    linear-gradient(110deg, #f93d66, yellow);
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -2;
+}
+
+header .center:after {
+  content: "";
+  display: block;
+  width: 43%;
+  height: 10px;
+  background: url(./images/topography.svg),
+    linear-gradient(110deg, yellow, #6d47d9);
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: -2;
+}
+
+.master-image {
+  text-align: center;
+  width: 100%;
+  padding: 3rem;
+}
+
+.master-image .card img {
+  display: block;
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.master-image .card {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.master-image .card img:hover {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    background: var(--yellow);
+    width: 10%;
+  }
+
+  .menu p {
+    font-size: 2rem;
+    font-weight: 200;
+    position: relative;
+    margin-left: 35%;
+    margin-top: -3.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .beginner {
+    position: relative;
+    width: 100%;
+    left: -100%;
+    display: none;
+    margin-left: -0.1rem;
+    animation: showMenu 400ms ease forwards;
+  }
+
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+
+  .beginner .list-1 {
+    background: var(--yellow);
+    padding: 8px;
+    width: 19%;
+    text-align: center;
+  }
+
+  .cover .box-3 {
+    height: 65vh;
+  }
+
+  .cover .box-4 {
+    padding: 32px;
+  }
+
+  .joint {
+    padding: 4px;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  .good {
+    width: 25%;
+  }
+
+  .rightside {
+    margin-top: -2.5rem;
+  }
+
+  .split .box-6 {
+    height: 40vh;
+  }
+
+  .box-10 .size {
+    position: relative;
+    left: 0;
+  }
+
+  .box-10 .float {
+    position: relative;
+    left: -13%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    width: 14%;
+  }
+
+  .menu p {
+    margin-left: 28%;
+  }
+
+  .beginner {
+    margin-left: -1rem;
+  }
+
+  .beginner .list-1 {
+    width: 22%;
+    margin-left: 1rem;
+  }
+
+  .cover {
+    flex-direction: column;
+  }
+
+  .cover .box-3 {
+    margin-left: -1.2rem;
+    width: 98%;
+  }
+
+  .rightside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-left: -1.2rem;
+  }
+
+  .rightside .box-4 {
+    margin-top: -9rem;
+    padding: 0;
+    height: 22vh;
+    padding: 0 40%;
+  }
+
+  .split {
+    margin-top: -14rem;
+    width: 100%;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-left: -0.8rem;
+  }
+
+  .split .box-6 {
+    padding: 1rem;
+    height: 30vh;
+  }
+
+  .split .box-6 .i {
+    margin-top: 2.5rem;
+  }
+
+  .split .box-6 .t {
+    font-size: 1.5rem;
+  }
+
+  .split .box-6 .word {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding-bottom: 3.5rem;
+  }
+
+  header .center:before {
+    width: 35%;
+  }
+
+  header .center:after {
+    width: 35%;
+  }
+
+  .box-10 {
+    margin-top: -0.1rem;
+    margin-top: 2rem;
+    display: block;
+    height: 94vh;
+    margin-left: -0.8rem;
+  }
+
+  .box-10 img {
+    width: 60%;
+    margin-top: 4rem;
+  }
+
+  .box-10 .size {
+    left: 15%;
+  }
+
+  .box-10 .float {
+    left: 10%;
+  }
+
+  .box-10 .float button {
+    padding: 10px;
+    width: 20%;
+  }
+
+  .box-10 .float button a {
+    margin-left: -4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 18%;
+  }
+
+  .menu p {
+    margin-left: 35%;
+  }
+
+  .beginner {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .beginner .list-1 {
+    width: 29%;
+  }
+
+  .joint {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .good {
+    width: 35%;
+  }
+
+  .rightside {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .rightside .box-4 {
+    margin-top: 0;
+    padding: 0;
+    height: 20vh;
+    margin-bottom: 1rem;
+  }
+
+  .split {
+    margin-top: -8.5rem;
+  }
+
+  header .center:before {
+    width: 30%;
+  }
+
+  header .center:after {
+    width: 30%;
+  }
+
+  .box-10 {
+    height: 85vh;
+  }
+
+  .box-10 .float button {
+    width: 30%;
+  }
+
+  .master-image .card img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .menu {
+    width: 8rem;
+  }
+
+  .beginner {
+    gap: 0.5rem;
+  }
+
+  .beginner .list-1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .beginner a {
+    background: var(--yellow);
+    padding: 9px;
+  }
+
+  .cover .box-3 {
+    background: url("/images/GLV.gif") no-repeat;
+    height: 30rem;
+  }
+
+  .cover .box-3 .margtop {
+    margin-top: 10rem;
+  }
+
+  .joint {
+    width: 24rem;
+    font-size: 1.3rem;
+  }
+
+  .good {
+    width: 15rem;
+  }
+
+  .rightside {
+    height: 35rem;
+  }
+
+  .rightside .box-4 {
+    height: 12rem;
+  }
+
+  .split .box-6 .i {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+
+  .split .box-6 {
+    padding: 1rem;
+    height: 15rem;
+  }
+
+  .box-10 {
+    height: 40rem;
+  }
+
+  .box-10 .float {
+    left: 3em;
+    width: 90%;
+  }
+
+  .box-10 .float button {
+    padding: 10px;
+    width: 50%;
+  }
+
+  .box-10 .float button a {
+    margin-left: -4rem;
+  }
+
+  header .center:before {
+    width: 25%;
+  }
+
+  header .center:after {
+    width: 25%;
+  }
+}
